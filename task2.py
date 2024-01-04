@@ -1,31 +1,35 @@
 
-import numpy as nmp
+import numpy as np
 
 
 # Задача 1:
 # Создайте вектор из 100 случайных чисел от 1 до 10, по аналогии, как был создан вектор из 5 случайных чисел от 1 до 2: arr = np.random.randint(1, 2, size=5).
 # Посчитайте, не используя циклы, какой процент элементов в векторе больше 7.
 
-# arr = nmp.random.randint(1, 10, size=100)
-# filter_arr = arr[arr>7]
-# percent = len(filter_arr)/len(arr)*100
-# print(f'Процент элементов вектора, которые больше 7 равен {percent}%')
+arr = np.random.randint(1, 10, size=100)
+filter_arr = arr[arr>7]
+percent = len(filter_arr)/len(arr)*100
+print(f'Процент элементов вектора, которые больше 7 равен {percent}%')
 
 # Задача 2:
 # Проведите опыт из предыдущей задачи 1000 раз, а именно, создание вектора и подсёт процента элементов, больших 7. Какая часть полученных результатов равно 20%?
 
-# count = 0
-# for i in range(1000):
-#     arr = nmp.random.randint(1, 10, size=100)
-#     filter_arr = arr[arr>7]
-#     percent = len(filter_arr)/len(arr)*100
-#     if percent == 20:
-#         count += 1
+count = 0
+for i in range(1000):
+    arr = np.random.randint(1, 10, size=100)
+    filter_arr = arr[arr>7]
+    percent = len(filter_arr)/len(arr)*100
+    if percent == 20:
+        count += 1
 
-# print(count/1000 * 100)
+print(count/1000 * 100)
 
 # Задача 3:
 # Создайте матрицу numpy 10 x 10, где каждая строка будет выглядеть, как 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Желательно не использовать циклы.
 
-arr = nmp.arange(10, 10, start=1)
+arr = np.arange(1,11)
+arr = np.tile(arr,(10,1))
 print(arr)
+
+# Задача 4:
+# Не используя циклы, найдите суммы элементов матрицы в каждом столбце.

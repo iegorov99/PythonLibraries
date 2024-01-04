@@ -1,6 +1,6 @@
-import pandas as pnd
+import pandas as pd
 
-data = pnd.DataFrame(pnd.read_csv('Customers.csv', delimiter=';'))
+data = pd.DataFrame(pd.read_csv('Customers.csv', delimiter=';'))
 
 # Проверьте данные на наличие пропусков, а также если есть пропуски, замените или удалите их 
 
