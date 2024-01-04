@@ -33,10 +33,10 @@ print(f'количество домов ценой от 5.000.000 или до 2.
 # Постройте график, на котором будут отмечены все квартиры в виде точек, у которых x координата это цена(price), а y - площадь(area). 
 # Отметьте разными цветами точки, которые соответствуют квартирам с разным количеством парковочных мест(parking). Не забывайте о прозрачности.
 
-# data['parking'].unique()
-# colors = {0:'green', 1:'orange', 2:'red', 3:'purple'}
-# data.plot(kind='scatter', x='price', y='area', c=data['parking'].map(colors), alpha=0.5)
-# plt.show()
+data['parking'].unique()
+colors = {0:'green', 1:'orange', 2:'red', 3:'purple'}
+data.plot(kind='scatter', x='price', y='area', c=data['parking'].map(colors), alpha=0.5)
+plt.show()
 
 # Часть 3 (20 баллов).
 # Постройте на одном поле 4 поля с графиками, на каждом из которых будут отмечены точки-квартиры, где x - цена, а y - площадь. 
