@@ -10,10 +10,10 @@ import pandas as pd
 # Нарисуйте график, подпишите оси и сделайте подпись всей картинки(титульник).
 # Сделайте так, чтобы на вашем графике были клеточки, график был пунктиром и зелёного цвета, а ещё полупрозрачным, и, чтобы к нему была подпись “Вот такая моя функция”.
 
-# def func(x):
-#     return m.cos(m.sin(x*x)*m.log(m.sqrt(x**x)))*10
+def func(x):
+    return m.cos(m.sin(x*x)*m.log(m.sqrt(x**x)))*10
 
-# x = np.linspace(1, 10, 100)
+x = np.linspace(1, 10, 100)
 
 
 # Задача 2:
@@ -24,14 +24,14 @@ import pandas as pd
 # Подпишите оси и график, сделайте клеточки, укажите какой-нибудь размер точек, цвет и добавьте аргумент maker=’<’. 
 # Вместо < можете указать что-то своё. Укажите прозрачность, чтобы можно было увидеть, где много точек в одном месте, а где мало.
 
-# x = np.random.normal(0, 1, 3000)
-# y = np.random.normal(3, 4, 3000)
+x = np.random.normal(0, 1, 3000)
+y = np.random.normal(3, 4, 3000)
 
-# data = plt.scatter(x, y, color= 'green', s = 50, alpha = 0.5)
-# plt.title('График')
-# plt.xlabel('Иксы')
-# plt.ylabel('Игрики')
-# plt.show()
+data = plt.scatter(x, y, color= 'green', s = 50, alpha = 0.5, marker='>')
+plt.title('График')
+plt.xlabel('Иксы')
+plt.ylabel('Игрики')
+plt.show()
 
 
 # Задача 3.
